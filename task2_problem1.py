@@ -22,7 +22,7 @@ def parser( s):
 
         
 if __name__ == "__main__":
-    n = int(raw_input("Type then number of strigs"))
+    n = int(raw_input("Type then number of strings:"))
     for i in range(n):
         s = raw_input("type ur string").rstrip().split()
         count = parser ( s)
