@@ -5,12 +5,13 @@ def parser( s):
     a = 0
     count = 0
     i = 1
+    counting = 0
     n = len(s[0])
     if s[0][0] == '<':
         a += 1
     elif s[0][0] == '>':
         a -= 1
-    while a > 0 and i < n:
+    while a >= 0 and i < n:
         if s[0][i] == '<':
             a += 1
             i +=1
@@ -18,7 +19,11 @@ def parser( s):
             a -= 1
             count += 2
             i +=1
-    return count
+        if a==0:
+            counting =count
+        if i == n-1:
+            return counting
+    return counting
 
         
 if __name__ == "__main__":
