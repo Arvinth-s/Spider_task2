@@ -7,8 +7,8 @@ def find_max(s, L, R, v):
 
 
 if __name__ == "__main__":
-    size = int(raw_input("type the number of elements in the array:"))
-    n = int(raw_input("type the number of queries:"))
+    size = long long(raw_input("type the number of elements in the array:"))
+    n = long long(raw_input("type the number of queries:"))
     s = []
     for i in range(size):
         s.append(i+1)
