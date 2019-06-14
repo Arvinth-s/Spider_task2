@@ -21,8 +21,6 @@ def parser( s):
             i +=1
         if a==0:
             counting =count
-        if i == n-1:
-            return counting
     return counting
 
         
